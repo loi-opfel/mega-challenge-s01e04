@@ -42,6 +42,9 @@ export const readNight: ReadNight = (runsDir, night) => {
   }
   entries.sort((a, b) => Date.parse(a.at) - Date.parse(b.at));
 
+  const counts = { ok: 0, retry: 0, fail: 0 };
+  for (const e of entries) counts[e.status]++;
+
   const byJob = new Map<string, DigestRow>();
   for (const e of entries) {
     const row = byJob.get(e.job);
@@ -66,5 +69,5 @@ export const readNight: ReadNight = (runsDir, night) => {
     row.last = e.at;
   }
   const rows = [...byJob.values()].sort((a, b) => (a.job < b.job ? -1 : a.job > b.job ? 1 : 0));
-  return { night, rows, badLines } satisfies DigestNight;
+  return { night, rows, counts, badLines } satisfies DigestNight;
 };

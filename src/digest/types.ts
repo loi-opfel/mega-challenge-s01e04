@@ -15,6 +15,7 @@ export type DigestRow = {
 export type DigestNight = {
   night: string;
   rows: DigestRow[]; // sorted by job
+  counts: { ok: number; retry: number; fail: number }; // log lines per status
   badLines: number; // lines that did not parse, counted not thrown
 };
 
