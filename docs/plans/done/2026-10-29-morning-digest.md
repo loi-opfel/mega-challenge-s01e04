@@ -1,6 +1,6 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
 ---
@@ -77,3 +77,13 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+- #1 Run log reader + src/digest/types.ts — https://github.com/loi-opfel/mega-challenge-s01e04/issues/1
+- #2 Digest page — https://github.com/loi-opfel/mega-challenge-s01e04/issues/2
+- #3 Digest JSON — https://github.com/loi-opfel/mega-challenge-s01e04/issues/3
+- #4 Board link — https://github.com/loi-opfel/mega-challenge-s01e04/issues/4
+- #5 Route tests — https://github.com/loi-opfel/mega-challenge-s01e04/issues/5
+- #6 Preview for review — https://github.com/loi-opfel/mega-challenge-s01e04/issues/6
+- #7 Clean up — https://github.com/loi-opfel/mega-challenge-s01e04/issues/7
